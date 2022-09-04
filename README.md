@@ -20,7 +20,11 @@
 <br/>
 `docker exec -it <container id> | <image name> <command>` | `winpty docker exec ...` (in windows gitbash) - Run a command in a running container e.g `docker exec -it 0ebdadaefb9a redis-cli` which exec `redis-cli` in running redis container. `-it` is short command for `-i` (Keep STDIN open even if not attached / attached command to redis container) and `-t` to make text beautifier (text autocomplete/indentation etc).
 <br/>
+<br/>
 `docker exec -it <container id> | <image name> sh ` | `winpty docker exec ...` (in windows gitbash) - Full terminal access inside the container. E.g  `winpty docker exec -it 0ebdadaefb9a sh` wherein `0ebdadaefb9a` is the container id of redis container. By running this, i already get full access into redis cli in the running container. `sh` is a shell or command processor.
 <br/>
+<br/>
 `docker run -it busybox sh` - alternative to `docker exec` but preferred `docker exec`
+<br/>
+`docker build .` - generate docker image / build project into a docker image
 
