@@ -42,7 +42,9 @@
 ` docker commit -c "CMD 'redis-server'" <container id>` (win)
 <br/>  
 `docker-compose up --build` - Build images before starting containers
-<br/>  
+<br/>
+`docker build -f Dockerfile.backend .` - build specific docker file
+<br/>
 `docker-compose up -d` - (detached mode) run containers in the background
 <br/>  
 `docker-compose down` - Stop and remove containers, networks
